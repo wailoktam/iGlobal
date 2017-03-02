@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="iglobal-build-build"
+		revision="0.1-SNAPSHOT"
+		extra-scalaVersion="2.10"
+		extra-sbtVersion="0.13"
+		conf="compile"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20170302184309"/>
+	<dependencies>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.4" status="release" pubdate="20140319064600" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2487" time="0" location="/home/wailoktam/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.pom"/>
+				<caller organisation="org.scalariform" name="scalariform_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.0" callerrev="0.1.4"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7126372" time="0" location="/home/wailoktam/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.sbt" name="sbt-scalariform">
+			<revision name="1.3.0" status="release" pubdate="20140224173530" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="4">
+				<metadata-artifact status="no" details="" size="1360" time="0" location="/home/wailoktam/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-scalariform/ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-scalariform/scala_2.10/sbt_0.13/1.3.0/ivys/ivy.xml"/>
+				<caller organisation="default" name="iglobal-build-build" conf="compile" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbt-scalariform" type="jar" ext="jar" status="no" details="" size="29303" time="0" location="/home/wailoktam/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-scalariform/jars/sbt-scalariform-1.3.0.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-scalariform/scala_2.10/sbt_0.13/1.3.0/jars/sbt-scalariform.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalariform" name="scalariform_2.10">
+			<revision name="0.1.4" status="release" pubdate="20130425033552" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/mdr/scalariform" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="5">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="2789" time="0" location="/home/wailoktam/.ivy2/cache/org.scalariform/scalariform_2.10/ivy-0.1.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scalariform/scalariform_2.10/0.1.4/scalariform_2.10-0.1.4.pom"/>
+				<caller organisation="com.typesafe.sbt" name="sbt-scalariform" conf="compile" rev="0.1.4" rev-constraint-default="0.1.4" rev-constraint-dynamic="0.1.4" callerrev="1.3.0"/>
+				<artifacts>
+					<artifact name="scalariform_2.10" type="jar" ext="jar" status="no" details="" size="1857142" time="0" location="/home/wailoktam/.ivy2/cache/org.scalariform/scalariform_2.10/jars/scalariform_2.10-0.1.4.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scalariform/scalariform_2.10/0.1.4/scalariform_2.10-0.1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.sbt" name="sbt-start-script">
+			<revision name="0.10.0" status="release" pubdate="20130911085510" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="3">
+				<metadata-artifact status="no" details="" size="1749" time="0" location="/home/wailoktam/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-start-script/ivy-0.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-start-script/scala_2.10/sbt_0.13/0.10.0/ivys/ivy.xml"/>
+				<caller organisation="default" name="iglobal-build-build" conf="compile" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbt-start-script" type="jar" ext="jar" status="no" details="" size="66180" time="0" location="/home/wailoktam/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-start-script/jars/sbt-start-script-0.10.0.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-start-script/scala_2.10/sbt_0.13/0.10.0/jars/sbt-start-script.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-io" name="commons-io">
+			<revision name="2.4" status="release" pubdate="20120613072203" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/io/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<metadata-artifact status="no" details="" size="8589" time="0" location="/home/wailoktam/.ivy2/cache/commons-io/commons-io/ivy-2.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/commons-io/commons-io/2.4/commons-io-2.4.pom"/>
+				<caller organisation="default" name="iglobal-build-build" conf="compile" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-io" type="jar" ext="jar" status="no" details="" size="185140" time="0" location="/home/wailoktam/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.4.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/commons-io/commons-io/2.4/commons-io-2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.rauschig" name="jarchivelib">
+			<revision name="0.7.1" status="release" pubdate="20150415221700" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://rauschig.org/jarchivelib" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<metadata-artifact status="no" details="" size="4337" time="0" location="/home/wailoktam/.ivy2/cache/org.rauschig/jarchivelib/ivy-0.7.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/rauschig/jarchivelib/0.7.1/jarchivelib-0.7.1.pom"/>
+				<caller organisation="default" name="iglobal-build-build" conf="compile" rev="0.7.1" rev-constraint-default="0.7.1" rev-constraint-dynamic="0.7.1" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jarchivelib" type="bundle" ext="jar" status="no" details="" size="40978" time="0" location="/home/wailoktam/.ivy2/cache/org.rauschig/jarchivelib/bundles/jarchivelib-0.7.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/rauschig/jarchivelib/0.7.1/jarchivelib-0.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-compress">
+			<revision name="1.9" status="release" pubdate="20141006140200" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-compress/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default(compile)" position="1">
+				<metadata-artifact status="no" details="" size="10459" time="0" location="/home/wailoktam/.ivy2/cache/org.apache.commons/commons-compress/ivy-1.9.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/commons/commons-compress/1.9/commons-compress-1.9.pom"/>
+				<caller organisation="org.rauschig" name="jarchivelib" conf="default, compile, runtime, master" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="0.7.1"/>
+				<caller organisation="default" name="iglobal-build-build" conf="compile" rev="1.7" rev-constraint-default="1.7" rev-constraint-dynamic="1.7" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-compress" type="jar" ext="jar" status="no" details="" size="378217" time="0" location="/home/wailoktam/.ivy2/cache/org.apache.commons/commons-compress/jars/commons-compress-1.9.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/apache/commons/commons-compress/1.9/commons-compress-1.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.7" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="default, compile, runtime, default(compile), master" position="-1">
+				<evicted-by rev="1.9"/>
+				<caller organisation="default" name="iglobal-build-build" conf="compile" rev="1.7" rev-constraint-default="1.7" rev-constraint-dynamic="1.7" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
