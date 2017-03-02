@@ -117,11 +117,29 @@ object TrainSpark {
     }
   }
 
+  
+  def makeFeatList(cols: List[String]): List = {
+    @tailrec
+	val numberStream = Stream.from(0).iterator
+    def featAccumulator(cols: List[String], featList: List[String]): List[String] = {
+      ints match {
+        case Nil => featList
+        case x :: tail => featAccumulator(tail, featList)
+      }
+    }
+	val counter = numberStream.next
+    featAccumulator(cols, (counter+1).toString.concat(":") :: cols[counter]))
+  }
+  
+  
+  
 
   def prepareTrain(trainSrc: scala.io.BufferedSource, trainBw: BufferedWriter): Unit = {
     for (line <- trainSrc.getLines) {
+	  	
       val cols = line.split(",").map(_.trim)
-        val featLast1 = "7:" :: List(sectParaNum.toString())
+	  
+      val featLast1 = "25:" :: cols[25-numberStream.next])
 
         //idWoLastSect = 2:450-4-1-1
         val featLast2 = "6:" :: paraFrTop :: " " :: featLast1
